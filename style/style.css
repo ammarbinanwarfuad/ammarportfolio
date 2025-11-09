@@ -9,16 +9,15 @@
 /* Header CSS Starts */
 .navbar {
   display: flex;
-  justify-content: space-around;
-  margin: 50px 200px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 50px auto;
+  padding: 0 50px;
+  position: relative;
 }
 .navtitle {
-  position: absolute;
-  width: 114px;
-  height: 34px;
-  left: 150px;
-  top: 50px;
-
   color: rgb(13, 19, 33);
   font-family: Azeret Mono;
   font-size: 28px;
@@ -37,7 +36,7 @@ nav ul li {
 }
 
 nav ul li a {
-  position: stat;
+  position: static;
   text-decoration: none;
   color: rgb(13, 19, 33);
   font-family: Azeret Mono;
@@ -49,62 +48,53 @@ nav ul li a {
 }
 
 .btn {
-  position: absolute;
-  width: 228px;
-  height: 58px;
-  left: 1046px;
-  top: 38px;
-
   box-sizing: border-box;
   border: 1px solid rgb(13, 19, 33);
   border-radius: 8px;
   opacity: 0.8;
-  padding: 17px 24px 17px 24px;
+  padding: 17px 24px;
+  cursor: pointer;
+  background: transparent;
 }
 /* Header CSS Ends  */
 
 /* Hero Section CSS Starts */
 #hero {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 652px;
   background-image: url(../assets/Hero-bg.png);
   background-size: cover;
   background-position: center;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .banner {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-
-  position: absolute;
-  width: 998px;
-  height: 582px;
-  left: 221px;
-  right: 221px;
-  top: 157px;
-  bottom: 4506px;
+  max-width: 998px;
+  width: 100%;
+  padding: 20px;
 }
 
 .banner_image {
   width: 173.03px;
   height: 228.9px;
-  left: 243.4%;
-  right: -215.41%;
-  top: 0%;
-  bottom: 4.63%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .banner h1 {
-  width: 998px;
-  height: 136px;
-
+  width: 100%;
+  max-width: 998px;
   color: rgb(13, 19, 33);
   font-family: Azeret Mono;
   font-size: 48px;
@@ -115,8 +105,8 @@ nav ul li a {
   margin: 24px 0px;
 }
 .banner p {
-  width: 852px;
-  height: 52px;
+  width: 100%;
+  max-width: 852px;
   opacity: 0.7;
   color: rgb(13, 19, 33);
   font-family: Azeret Mono;
@@ -148,35 +138,32 @@ nav ul li a {
 
 /* Web Dev CSS Starts */
 #web-dev {
-  width: 1440px;
-  height: 1395px;
-
-  left: 148px;
-  right: 152px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .web-dev-content {
-  width: 1140px;
-  height: 1395px;
-  left: 148px;
-  right: 152px;
-  top: 857px;
-  bottom: 2993px;
+  max-width: 1140px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 80px 97px 80px 97px;
+  padding: 80px 97px;
   border-radius: 16px;
   background: rgba(13, 19, 33, 0.02);
-
   margin: 74px auto;
 }
 
 .div1 {
-  width: 852px;
-  height: 115px;
+  width: 100%;
+  max-width: 852px;
   margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .h2 {
   margin-bottom: 24px;
@@ -187,8 +174,7 @@ nav ul li a {
   line-height: 37px;
   letter-spacing: 0%;
   text-align: center;
-  width: 852px;
-  height: 39px;
+  width: 100%;
 }
 
 .p {
@@ -200,43 +186,41 @@ nav ul li a {
   line-height: 26px;
   letter-spacing: 0%;
   text-align: center;
-
-  width: 852px;
-  height: 52px;
+  width: 100%;
   margin-bottom: 48px;
 }
 
 .div2 {
-  width: 946px;
-  height: 336px;
+  width: 100%;
+  max-width: 946px;
   padding: 48px;
   margin-bottom: 32px;
   border-radius: 16px;
-
   background: linear-gradient(
     90deg,
     rgb(255, 255, 255),
     rgba(255, 255, 255, 0) 100%
   );
-
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .content {
-  width: 477px;
-  height: 220px;
+  width: 100%;
+  max-width: 477px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
+  text-align: center;
 }
 
 .content h3 {
-  width: 406px;
-  height: 72px;
+  width: 100%;
   padding: 0px;
   margin-bottom: 16px;
   color: rgba(13, 19, 33, 0.7);
@@ -245,11 +229,10 @@ nav ul li a {
   font-weight: 700;
   line-height: 36px;
   letter-spacing: 0%;
-  text-align: left;
+  text-align: center;
 }
 .content p {
-  width: 468px;
-  height: 52px;
+  width: 100%;
   margin-bottom: 32px;
   opacity: 0.7;
   color: rgb(13, 19, 33);
@@ -258,7 +241,19 @@ nav ul li a {
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0%;
-  text-align: left;
+  text-align: center;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .btn-pric {
@@ -293,17 +288,19 @@ nav ul li a {
   );
   padding: 48px;
   margin-bottom: 32px;
-  width: 946px;
-  height: 336px;
+  width: 100%;
+  max-width: 946px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 .div4 {
   padding: 48px;
   margin-bottom: 32px;
-  width: 946px;
-  height: 336px;
+  width: 100%;
+  max-width: 946px;
   border-radius: 16px;
   background: linear-gradient(
     90deg,
@@ -311,25 +308,27 @@ nav ul li a {
     rgba(255, 255, 255, 0) 100%
   );
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 /* Web Dev CSS Ends */
 
 /* Inspiration Section Starts */
 #inspiration {
-  width: 1140px;
-  height: 775px;
+  width: 100%;
+  max-width: 1140px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 0px;
+  padding: 0 20px;
   margin: 88px auto 0px;
 }
 .context {
-  width: 852px;
-  height: 113px;
+  width: 100%;
+  max-width: 852px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -339,12 +338,21 @@ nav ul li a {
 }
 
 .iframe {
-  width: 1140px;
-  height: 614px;
+  width: 100%;
+  max-width: 1140px;
   padding: 32px;
   box-sizing: border-box;
   border: 1px solid rgba(13, 19, 33, 0.2);
   border-radius: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.iframe iframe {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 550px;
 }
 /* Inspiration Section Ends */
 
@@ -353,46 +361,54 @@ nav ul li a {
 /* Target Section Ends */
 #target {
   margin: 111px auto 0px;
-  width: 1140px;
-  height: 600px;
-  bottom: auto;
+  width: 100%;
+  max-width: 1140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px;
+  padding: 0 20px;
 }
 .main2 {
-  width: 852px;
-  height: 115px;
+  width: 100%;
+  max-width: 852px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cardbox {
-  width: 1140px;
-  height: 400px;
+  width: 100%;
+  max-width: 1140px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: 0px;
   margin-top: 48px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .cards {
-  width: 364px;
+  width: 100%;
+  max-width: 364px;
   min-height: 400px;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   padding: 40px;
   border-radius: 16px;
   background: rgba(255, 76, 30, 0.05);
+  text-align: center;
+}
+.cards img {
+  display: block;
+  margin: 0 auto;
 }
 .cardbox h3 {
-  width: 284px;
-  height: 36px;
+  width: 100%;
   margin-top: 24px;
   color: rgb(13, 19, 33);
   font-family: Azeret Mono;
@@ -400,11 +416,10 @@ nav ul li a {
   font-weight: 800;
   line-height: 36px;
   letter-spacing: 0%;
-  text-align: left;
+  text-align: center;
 }
 .cardbox p {
-  width: 284px;
-  height: 52px;
+  width: 100%;
   margin-top: 8px;
   color: rgb(13, 19, 33);
   font-family: Azeret Mono;
@@ -412,7 +427,7 @@ nav ul li a {
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0%;
-  text-align: left;
+  text-align: center;
   opacity: 0.7;
 }
 .cardbox a {
@@ -423,7 +438,7 @@ nav ul li a {
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 0%;
-  text-align: left;
+  text-align: center;
   text-decoration-line: underline;
 }
 .css {
@@ -434,30 +449,27 @@ nav ul li a {
 }
 /* Support Section Starts */
 #support {
-  width: 1140px;
-  height: 313px;
+  width: 100%;
+  max-width: 1140px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  padding: 64px 48px 64px 48px;
+  align-items: center;
+  padding: 64px 48px;
   background-image: linear-gradient(
       0deg,
-      rgb(16, 16, 16) -19.5%,
-      rgba(16, 16, 16, 0) 100%
+      rgba(16, 16, 16, 0.5),
+      rgba(16, 16, 16, 0.3) 100%
     ),
     url(../assets/handshake.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 16px;
-
-  background: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2),
-    url(Email);
   margin: 111px auto 0px;
 }
 .sbanner {
-  width: 1044px;
-  height: 185px;
+  width: 100%;
+  max-width: 1044px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -476,8 +488,8 @@ nav ul li a {
 }
 
 .sbanner .p {
-  width: 606px;
-  height: 52px;
+  width: 100%;
+  max-width: 606px;
   opacity: 0.7;
   margin-bottom: 24px;
   color: rgb(255, 255, 255);
@@ -490,30 +502,30 @@ nav ul li a {
 }
 
 .form {
-  width: 684px;
-  height: 57px;
+  width: 100%;
+  max-width: 684px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   padding: 0px;
+  gap: 10px;
 }
 .form .left {
-  width: 548px;
+  flex: 1;
+  min-width: 200px;
   height: 57px;
-  padding: 19px 20px 19px 20px;
+  padding: 19px 20px;
   box-sizing: border-box;
   border: 1px solid rgba(13, 19, 33, 0.15);
   border-radius: 8px;
-
   background: rgb(255, 255, 255);
 }
 .form .submit {
   width: 120px;
   height: 57px;
-  padding: 17px 20px 17px 20px;
+  padding: 17px 20px;
   border-radius: 8px;
-
   background: rgb(255, 255, 255);
   color: rgb(13, 19, 33);
   font-family: Azeret Mono;
@@ -522,6 +534,8 @@ nav ul li a {
   line-height: 23px;
   letter-spacing: 0%;
   text-align: center;
+  cursor: pointer;
+  border: none;
 }
 /* Support Section Ends */
 
@@ -529,16 +543,13 @@ nav ul li a {
 #footer {
   border-radius: 16px;
   background: rgba(13, 19, 33, 0.03);
-  width: 1440px;
-  height: 100px;
+  width: 100%;
+  max-width: 1440px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 150px 32px 150px;
-  border-radius: 16px;
-
-  background: rgba(13, 19, 33, 0.03);
+  padding: 32px 50px;
   margin: 80px auto 0px;
 }
 
